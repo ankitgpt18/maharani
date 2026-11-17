@@ -1,0 +1,483 @@
+{
+  "cafe": {
+    "name": "Maharani Cafe",
+    "name_hi": "महारानी कैफ़े",
+    "tagline": "Royal Flavours & Authentic Bites",
+    "tagline_hi": "शाही स्वाद एवं आधुनिक अंदाज़",
+    "location": "Bapu Nagar, Jaipur, Rajasthan",
+    "location_hi": "बापू नगर, जयपुर, राजस्थान",
+    "food_type": "100% Pure Vegetarian",
+    "food_type_hi": "१००% शुद्ध शाकाहारी",
+    "phone": "919876543210",
+    "timings": "11:00 AM – 11:00 PM",
+    "timings_hi": "सुबह ११:०० से रात ११:००"
+  },
+  "categories": [
+    {
+      "id": "fries",
+      "name_en": "Fries",
+      "name_hi": "फ्राइज़",
+      "icon": "🍟",
+      "items": [
+        {
+          "id": "fries-1",
+          "name_en": "Classic French Fries",
+          "name_hi": "क्लासिक फ्रेंच फ्राइज़",
+          "desc_en": "Golden crisp salted potato fries served with dip.",
+          "desc_hi": "कुरकुरे सुनहरे पोटैटो फ्राइज़, हल्के नमक और डिप के साथ।",
+          "price": 79,
+          "veg": true,
+          "badge": "Crisp"
+        },
+        {
+          "id": "fries-2",
+          "name_en": "Peri Peri Fries",
+          "name_hi": "पेरी पेरी फ्राइज़",
+          "desc_en": "Crispy fries tossed in zesty African peri-peri spice mix.",
+          "desc_hi": "तीखे और चटपटे अफ़्रीकी पेरी-पेरी मसालों में टॉस किए हुए फ्राइज़।",
+          "price": 99,
+          "veg": true,
+          "badge": "Spicy"
+        },
+        {
+          "id": "fries-3",
+          "name_en": "Cheese Fries",
+          "name_hi": "चीज़ फ्राइज़",
+          "desc_en": "Crisp fries smothered in rich, creamy warm cheese sauce.",
+          "desc_hi": "गरमा-गरम क्रीमी चीज़ सॉस से भरपूर क्रिस्पी फ्राइज़।",
+          "price": 120,
+          "veg": true,
+          "badge": "Popular"
+        },
+        {
+          "id": "fries-4",
+          "name_en": "Loaded Fries",
+          "name_hi": "लोडेड फ्राइज़",
+          "desc_en": "Ultimate fries loaded with melted cheese, jalapenos, olives & signature sauces.",
+          "desc_hi": "मेल्टेड चीज़, जलापिनो, ऑलिव्स और स्पेशल सॉसेज से लोडेड शाही फ्राइज़।",
+          "price": 150,
+          "veg": true,
+          "badge": "Chef Special"
+        }
+      ]
+    },
+    {
+      "id": "momos",
+      "name_en": "Momos",
+      "name_hi": "मोमोज़",
+      "icon": "🥟",
+      "items": [
+        {
+          "id": "momos-1",
+          "name_en": "Steamed Momos",
+          "name_hi": "स्टीम्ड मोमोज़",
+          "desc_en": "Delicate steamed dumplings stuffed with fresh minced garden vegetables.",
+          "desc_hi": "ताज़ी बारीक कटी सब्ज़ियों से भरे पारम्परिक भाप में पके मोमोज़।",
+          "price": 79,
+          "veg": true
+        },
+        {
+          "id": "momos-2",
+          "name_en": "Fried Momos",
+          "name_hi": "फ्राइड मोमोज़",
+          "desc_en": "Golden deep-fried dumplings with a crisp outer crust and juicy filling.",
+          "desc_hi": "कुरकुरी सुनहरी परत और रसीली वेज फिलिंग वाले क्रिस्पी मोमोज़।",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "id": "momos-3",
+          "name_en": "Chilli Momos",
+          "name_hi": "चिली मोमोज़",
+          "desc_en": "Crispy momos tossed in spicy Indo-Chinese chilli garlic wok sauce.",
+          "desc_hi": "तीखे इंडो-चाइनीज़ चिली गार्लिक वॉक सॉस में टॉस किए हुए मोमोज़।",
+          "price": 110,
+          "veg": true,
+          "badge": "Hot"
+        }
+      ]
+    },
+    {
+      "id": "toast",
+      "name_en": "Toast",
+      "name_hi": "टोस्ट",
+      "icon": "🍞",
+      "items": [
+        {
+          "id": "toast-1",
+          "name_en": "Chilli Cheese Toast",
+          "name_hi": "चिली चीज़ टोस्ट",
+          "desc_en": "Toasted bread topped with molten cheese, finely chopped green chillies & herbs.",
+          "desc_hi": "मेल्टेड चीज़, बारीक कटी हरी मिर्च और हर्ब्स से तैयार क्रिस्पी टोस्ट।",
+          "price": 99,
+          "veg": true
+        },
+        {
+          "id": "toast-2",
+          "name_en": "Cheese Garlic Toast",
+          "name_hi": "चीज़ गार्लिक टोस्ट",
+          "desc_en": "Crispy bread rubbed with roasted garlic butter and smothered in cheese.",
+          "desc_hi": "भुने हुए लहसुनी बटर और भरपूर मोज़ेरेला चीज़ से बेक किया हुआ टोस्ट।",
+          "price": 120,
+          "veg": true,
+          "badge": "Popular"
+        },
+        {
+          "id": "toast-3",
+          "name_en": "Masala Garlic Toast",
+          "name_hi": "मसाला गार्लिक टोस्ट",
+          "desc_en": "Garlic toast with a zesty Indian spiced veggie topping and bubbling cheese.",
+          "desc_hi": "देसी मसालों वाली सब्ज़ियों और चीज़ की टॉपिंग के साथ चटपटा गार्लिक टोस्ट।",
+          "price": 120,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "id": "sandwiches",
+      "name_en": "Sandwiches",
+      "name_hi": "सैंडविच",
+      "icon": "🥪",
+      "items": [
+        {
+          "id": "sand-1",
+          "name_en": "Veg Sandwich",
+          "name_hi": "वेज सैंडविच",
+          "desc_en": "Fresh cucumber, tomato, onion and mint chutney grilled to golden perfection.",
+          "desc_hi": "ताज़ा खीरा, टमाटर, प्याज़ और हरी पुदीना चटनी से ग्रिल किया हुआ सैंडविच।",
+          "price": 89,
+          "veg": true
+        },
+        {
+          "id": "sand-2",
+          "name_en": "Cheese Corn Sandwich",
+          "name_hi": "चीज़ कॉर्न सैंडविच",
+          "desc_en": "Juicy sweet corn kernels and melted cheese with mild Italian seasoning.",
+          "desc_hi": "मीठे रसीले कॉर्न और मखमली चीज़ का क्लासिक इटैलियन ग्रिल्ड कॉम्बिनेशन।",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "id": "sand-3",
+          "name_en": "Veg Paneer Sandwich",
+          "name_hi": "वेज पनीर सैंडविच",
+          "desc_en": "Soft spiced malai paneer cubes, crunchy veggies and layered cheese.",
+          "desc_hi": "नरम मलाई पनीर क्यूब्स, क्रंची सब्ज़ियां और चटपटी चटनी से भरपूर।",
+          "price": 140,
+          "veg": true
+        },
+        {
+          "id": "sand-4",
+          "name_en": "Peri Peri Paneer Sandwich",
+          "name_hi": "पेरी पेरी पनीर सैंडविच",
+          "desc_en": "Marinated peri-peri paneer with caramelised bell peppers and spicy mayo.",
+          "desc_hi": "पेरी-पेरी मसालों में मैरिनेटेड पनीर, भुनी शिमला मिर्च और स्पाइसी मायो।",
+          "price": 150,
+          "veg": true,
+          "badge": "Spicy"
+        },
+        {
+          "id": "sand-5",
+          "name_en": "Maharani Special Sandwich",
+          "name_hi": "महारानी स्पेशल सैंडविच",
+          "desc_en": "Grilled vegetables, paneer, sweet corn, caramelised onions and signature Maharani sauce.",
+          "desc_hi": "ग्रिल्ड सब्ज़ियां, पनीर, स्वीट कॉर्न, कैरेमेलाइज़्ड प्याज़ और महारानी स्पेशल सॉस।",
+          "price": 180,
+          "veg": true,
+          "badge": "Royal Signature"
+        }
+      ]
+    },
+    {
+      "id": "wraps",
+      "name_en": "Wraps",
+      "name_hi": "रैप्स",
+      "icon": "🌯",
+      "items": [
+        {
+          "id": "wrap-1",
+          "name_en": "Veggie Wrap",
+          "name_hi": "वेजी रैप",
+          "desc_en": "Crunchy fresh vegetables and creamy herb dressing rolled in soft tortilla.",
+          "desc_hi": "ताज़ी कुरकुरी सब्ज़ियां और क्रीमी हर्ब ड्रेसिंग का स्वादिष्ट रोल।",
+          "price": 79,
+          "veg": true
+        },
+        {
+          "id": "wrap-2",
+          "name_en": "Cheese Veggie Wrap",
+          "name_hi": "चीज़ वेजी रैप",
+          "desc_en": "Garden fresh veggies infused with melted cheese spread and tangy relish.",
+          "desc_hi": "ताज़ी सब्ज़ियां, मेल्टेड चीज़ स्प्रेड और चटपटे मसालों का स्वादिष्ट रैप।",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "id": "wrap-3",
+          "name_en": "Cottage Cheese Wrap",
+          "name_hi": "कॉटेज चीज़ (पनीर) रैप",
+          "desc_en": "Tender paneer cubes tossed in house spices with crunchy bell peppers.",
+          "desc_hi": "मसालेदार ताज़ा पनीर, क्रंची शिमला मिर्च और स्पेशल सॉस से भरपूर रैप।",
+          "price": 120,
+          "veg": true,
+          "badge": "Popular"
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "name_en": "Burgers",
+      "name_hi": "बर्गर",
+      "icon": "🍔",
+      "items": [
+        {
+          "id": "burger-1",
+          "name_en": "Aloo Tikki Burger",
+          "name_hi": "आलू टिक्की बर्गर",
+          "desc_en": "Crisp golden spiced potato patty with tomato, onion slice and burger sauce.",
+          "desc_hi": "कुरकुरी मसालेदार आलू टिक्की, ताज़ा सलाद और स्पेशल बर्गर ड्रेसिंग।",
+          "price": 79,
+          "veg": true
+        },
+        {
+          "id": "burger-2",
+          "name_en": "Super Veggie Burger",
+          "name_hi": "सुपर वेजी बर्गर",
+          "desc_en": "Wholesome mixed vegetable patty, crisp lettuce, tomato and creamy mayo.",
+          "desc_hi": "सब्ज़ियों से भरपूर वेज पैटी, कुरकुरा लेट्यूस और क्रीमी मायोनीज़।",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "id": "burger-3",
+          "name_en": "Cottage Cheese Burger",
+          "name_hi": "कॉटेज चीज़ (पनीर) बर्गर",
+          "desc_en": "Thick paneer patty grilled with herbs, layered with cheese and fresh crunch.",
+          "desc_hi": "ग्रिल्ड पनीर पैटी, चीज़ की परत और क्रंची सलाद के साथ पेश।",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "id": "burger-4",
+          "name_en": "Maharani Special Burger",
+          "name_hi": "महारानी स्पेशल बर्गर",
+          "desc_en": "Crispy patty, fresh veggies, cheese, caramelised onions and signature Maharani sauce.",
+          "desc_hi": "क्रिस्पी पैटी, ताज़ा सब्ज़ियां, चीज़, कैरेमेलाइज़्ड प्याज़ और महारानी स्पेशल सॉस।",
+          "price": 150,
+          "veg": true,
+          "badge": "Royal Signature"
+        }
+      ]
+    },
+    {
+      "id": "panini",
+      "name_en": "Panini",
+      "name_hi": "पनीनी",
+      "icon": "🥖",
+      "items": [
+        {
+          "id": "panini-1",
+          "name_en": "Classic Veg Panini",
+          "name_hi": "क्लासिक वेज पनीनी",
+          "desc_en": "Italian ciabatta bread pressed hot with garden veggies and mozzarella.",
+          "desc_hi": "इटैलियन सियाबट्टा ब्रेड में गर्म ग्रिल्ड सब्ज़ियां और मोज़ेरेला।",
+          "price": 140,
+          "veg": true
+        },
+        {
+          "id": "panini-2",
+          "name_en": "Cheese Corn Panini",
+          "name_hi": "चीज़ कॉर्न पनीनी",
+          "desc_en": "Golden sweet corn, melted mozzarella and cheddar in a crisp pressed loaf.",
+          "desc_hi": "स्वीट कॉर्न, मेल्टेड मोज़ेरेला और चेडार चीज़ का क्रिस्पी ग्रिल्ड संगम।",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "id": "panini-3",
+          "name_en": "Pesto Veg Panini",
+          "name_hi": "पेस्तो वेज पनीनी",
+          "desc_en": "Fragrant basil pesto, roasted bell peppers, zucchini and melted cheese.",
+          "desc_hi": "ताज़ा बेसिल पेस्तो, रोस्टेड शिमला मिर्च और मेल्टेड चीज़ की सुगंध।",
+          "price": 160,
+          "veg": true
+        },
+        {
+          "id": "panini-4",
+          "name_en": "Peri Peri Paneer Panini",
+          "name_hi": "पेरी पेरी पनीर पनीनी",
+          "desc_en": "Fiery peri-peri spiced paneer ribbons with onions and molten cheese.",
+          "desc_hi": "चटपटा पेरी-पेरी पनीर, कैरेमेलाइज्ड प्याज़ और गरमा-गरम चीज़।",
+          "price": 170,
+          "veg": true,
+          "badge": "Spicy"
+        },
+        {
+          "id": "panini-5",
+          "name_en": "Pesto Paneer Panini",
+          "name_hi": "पेस्तो पनीर पनीनी",
+          "desc_en": "Tender malai paneer grilled with Italian herb pesto and gooey cheese.",
+          "desc_hi": "मलाई पनीर, इटैलियन हर्ब पेस्तो और भरपूर चीज़ से ग्रिल्ड।",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "id": "panini-6",
+          "name_en": "Maharani Special Panini",
+          "name_hi": "महारानी स्पेशल पनीनी",
+          "desc_en": "Pesto, paneer, roasted vegetables, melted cheese and signature Maharani sauce.",
+          "desc_hi": "पेस्तो सॉस, पनीर, रोस्टेड सब्ज़ियां, मेल्टेड चीज़ और महारानी स्पेशल सॉस।",
+          "price": 200,
+          "veg": true,
+          "badge": "Royal Signature"
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name_en": "Pizza",
+      "name_hi": "पिज़्ज़ा",
+      "icon": "🍕",
+      "items": [
+        {
+          "id": "pizza-1",
+          "name_en": "Margherita Pizza",
+          "name_hi": "मार्गरेट पिज़्ज़ा",
+          "desc_en": "Classic tomato basil herb sauce blanketed with melted mozzarella cheese.",
+          "desc_hi": "क्लासिक टोमेटो बेसिल सॉस और भरपूर मेल्टेड मोज़ेरेला चीज़।",
+          "price": 139,
+          "veg": true
+        },
+        {
+          "id": "pizza-2",
+          "name_en": "Cheese, Onion & Capsicum Pizza",
+          "name_hi": "चीज़, प्याज़ एवं शिमला मिर्च पिज़्ज़ा",
+          "desc_en": "Crisp onions, diced green capsicum and bubbling golden mozzarella.",
+          "desc_hi": "कुरकुरा प्याज़, कटी हुई हरी शिमला मिर्च और गरमा-गरम चीज़।",
+          "price": 150,
+          "veg": true,
+          "badge": "Classic"
+        },
+        {
+          "id": "pizza-3",
+          "name_en": "Farmhouse Pizza",
+          "name_hi": "फार्महाउस पिज़्ज़ा",
+          "desc_en": "Loaded with mushrooms, sweet corn, crisp capsicum, onions and black olives.",
+          "desc_hi": "मशरूम, स्वीट कॉर्न, शिमला मिर्च, प्याज़ और ऑलिव्स से भरपूर पिज़्ज़ा।",
+          "price": 180,
+          "veg": true,
+          "badge": "Bestseller"
+        },
+        {
+          "id": "pizza-4",
+          "name_en": "Tandoori Paneer Pizza",
+          "name_hi": "तंदूरी पनीर पिज़्ज़ा",
+          "desc_en": "Marinated tandoori paneer tikka, red paprika, onions and coriander garnish.",
+          "desc_hi": "मसालेदार तंदूरी पनीर टिक्का, लाल शिमला मिर्च और मेल्टेड चीज़।",
+          "price": 200,
+          "veg": true,
+          "badge": "Chef Choice"
+        },
+        {
+          "id": "pizza-5",
+          "name_en": "Maharani Special Pizza",
+          "name_hi": "महारानी स्पेशल पिज़्ज़ा",
+          "desc_en": "Paneer, bell peppers, onions, olives, melted cheese and signature Maharani sauce.",
+          "desc_hi": "पनीर, शिमला मिर्च, प्याज़, ऑलिव्स, मेल्टेड मोज़ेरेला और महारानी सिग्नेचर सॉस।",
+          "price": 230,
+          "veg": true,
+          "badge": "Royal Signature"
+        }
+      ]
+    },
+    {
+      "id": "icecream",
+      "name_en": "Ice Cream",
+      "name_hi": "आइसक्रीम",
+      "icon": "🍨",
+      "items": [
+        {
+          "id": "ice-1",
+          "name_en": "Vanilla Ice Cream",
+          "name_hi": "वैनिला आइसक्रीम",
+          "desc_en": "Smooth, rich Madagascar vanilla bean churned cream.",
+          "desc_hi": "मखमली और ठंडी क्लासिक वैनिला आइसक्रीम।",
+          "price": 49,
+          "veg": true
+        },
+        {
+          "id": "ice-2",
+          "name_en": "Strawberry Ice Cream",
+          "name_hi": "स्ट्रॉबेरी आइसक्रीम",
+          "desc_en": "Refreshing berry cream with natural strawberry notes.",
+          "desc_hi": "ताज़ा स्ट्रॉबेरी के स्वाद से भरपूर रिफ्रेशिंग आइसक्रीम।",
+          "price": 49,
+          "veg": true
+        },
+        {
+          "id": "ice-3",
+          "name_en": "Chocolate Ice Cream",
+          "name_hi": "चॉकलेट आइसक्रीम",
+          "desc_en": "Rich cocoa cream churned to decadent smoothness.",
+          "desc_hi": "गाढ़ी और स्वादिष्ट रिच कोको चॉकलेट आइसक्रीम।",
+          "price": 49,
+          "veg": true
+        },
+        {
+          "id": "ice-4",
+          "name_en": "Belgian Chocolate Ice Cream",
+          "name_hi": "बेल्जियन चॉकलेट आइसक्रीम",
+          "desc_en": "Intense dark Belgian chocolate with luxurious silky texture.",
+          "desc_hi": "प्रीमियम डार्क बेल्जियन चॉकलेट से बनी शाही आइसक्रीम।",
+          "price": 49,
+          "veg": true,
+          "badge": "Royal Treat"
+        }
+      ]
+    },
+    {
+      "id": "addons",
+      "name_en": "Add-ons",
+      "name_hi": "ऐड-ऑन्स",
+      "icon": "✨",
+      "items": [
+        {
+          "id": "addon-1",
+          "name_en": "Mayonnaise",
+          "name_hi": "मेयोनीज़",
+          "desc_en": "Extra creamy garlic-herb dip.",
+          "desc_hi": "अतिरिक्त क्रीमी और स्मूथ मेयोनीज़।",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "id": "addon-2",
+          "name_en": "Schezwan Sauce",
+          "name_hi": "शेज़वान सॉस",
+          "desc_en": "Spicy red chilli and Sichuan pepper wok dip.",
+          "desc_hi": "तीखा और चटपटा शेज़वान डिप।",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "id": "addon-3",
+          "name_en": "Sweet Chilli Sauce",
+          "name_hi": "स्वीट चिली सॉस",
+          "desc_en": "Tangy sweet and mildly spiced dipping sauce.",
+          "desc_hi": "खट्टा-मीठा और हल्का तीखा डिपिंग सॉस।",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "id": "addon-4",
+          "name_en": "Cheese Slice",
+          "name_hi": "चीज़ स्लाइस",
+          "desc_en": "Extra processed cheddar slice melted over your dish.",
+          "desc_hi": "आपके डिश के लिए एक्स्ट्रा मेल्टेड चीज़ स्लाइस।",
+          "price": 30,
+          "veg": true
+        }
+      ]
+    }
+  ]
+}

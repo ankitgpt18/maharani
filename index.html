@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Maharani Cafe | Jaipur</title>
+  <meta name="description" content="Handcrafted pure vegetarian dining, stone-fired pizza, panini, and cafe delicacies inspired by the royal heritage of Jaipur." />
+  <meta name="theme-color" content="#181514" />
+
+  <!-- Google Fonts: Italiana (Bespoke Luxury Display Serif) + DM Sans (Clean Modern Proportions) + Rozha One (Heritage Devanagari) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Italiana&family=Rozha+One&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       MAHARANI CAFE — JAIPUR HERITAGE CULINARY DESIGN SYSTEM
+       Bespoke Agency Craft • Zero AI Slop • Architectural Precision
+       ========================================================================== */
+    :root {
+      --nav-height: 54px;
+
+      --bg-canvas: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-sandstone: #F3ECE2;
+      --bg-wash: #F6EDE8;
+
+      /* Jaipur Pink City Terracotta Lime-Wash */
+      --terracotta: #B35446;
+      --terracotta-dark: #8F3A2E;
+      --terracotta-soft: #F5EAE6;
+      --terracotta-border: rgba(179, 84, 70, 0.22);
+      --terracotta-glow: rgba(179, 84, 70, 0.12);
+
+      /* Deep Charcoal Onyx */
+      --charcoal-ink: #181514;
+      --charcoal-surface: #221E1C;
+      --charcoal-muted: #58504B;
+      --charcoal-faint: #8E857F;
+      --border-subtle: rgba(24, 21, 20, 0.08);
+      --border-medium: rgba(24, 21, 20, 0.14);
+
+      /* Antique Royal Brass */
+      --antique-brass: #C29B62;
+      --antique-brass-light: #DFC898;
+      --antique-brass-dim: rgba(194, 155, 98, 0.35);
+
+      /* Certified Vegetarian Emerald */
+      --veg-green: #1E824C;
+      --veg-soft: #EBF5EF;
+
+      /* Typographic Hierarchy */
+      --font-display: 'Italiana', serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+      --font-scripture: 'Rozha One', serif;
+
+      /* Geometry & Easing */
+      --radius-xs: 2px;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 14px;
+      --radius-pill: 9999px;
+
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --shadow-subtle: 0 2px 10px rgba(24, 21, 20, 0.04);
+      --shadow-elevation: 0 8px 24px rgba(24, 21, 20, 0.08);
+      --shadow-float: 0 16px 48px rgba(24, 21, 20, 0.22);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--charcoal-ink);
+      font-family: var(--font-body);
+      font-size: 14px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 110px;
+    }
+
+    /* Global tactile linen texture */
+    .linen-watermark {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.028;
+      background-image: 
+        radial-gradient(circle at center, var(--charcoal-ink) 1px, transparent 1px),
+        radial-gradient(circle at center, var(--terracotta) 1px, var(--bg-canvas) 1px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+    }
+
+    .viewport-container {
+      position: relative;
+      z-index: 1;
+      max-width: 540px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--bg-canvas);
+      border-left: 1px solid var(--border-subtle);
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    /* ==========================================================================
+       REDESIGNED CLEAN TOP NAVBAR (NO TABLE 04, SYMMETRICAL EDITORIAL LUXURY)
+       ========================================================================== */
+    .top-app-bar {
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      height: var(--nav-height);
+      background: rgba(250, 247, 242, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left-seal {
+      display: flex;
+      align-items: center;
+      width: 38px;
+    }
+    .nav-seal-svg {
+      width: 26px;
+      height: 26px;
+      color: var(--charcoal-ink);
+    }
+
+    .app-brand-lockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+    .app-brand-lockup h1 {
+      font-family: var(--font-display);
+      font-size: 17px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      line-height: 1.1;
+      color: var(--charcoal-ink);
+    }
+    .app-brand-lockup span {
+      font-size: 8.5px;
+      font-weight: 700;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 38px;
+    }
+
+    .icon-action-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--charcoal-ink);
+      cursor: pointer;
+      transition: all 0.2s var(--ease-out-expo);
+    }
+    .icon-action-btn:hover {
+      background: var(--bg-sandstone);
+      border-color: var(--border-medium);
+    }
+    .icon-action-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Expandable Search Input */
+    .search-panel {
+      padding: 0 16px 12px 16px;
+      background: rgba(250, 247, 242, 0.96);
+      border-bottom: 1px solid var(--border-subtle);
+      display: none;
+      animation: slideDown 0.22s var(--ease-out-expo);
+    }
+    .search-panel.active {
+      display: block;
+    }
+    .search-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .search-input-wrap svg {
+      position: absolute;
+      left: 12px;
+      width: 16px;
+      height: 16px;
+      color: var(--charcoal-faint);
+    }
+    .search-input {
+      width: 100%;
+      padding: 9px 14px 9px 36px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      color: var(--charcoal-ink);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-input:focus {
+      border-color: var(--terracotta);
+    }
+    .search-clear-btn {
+      position: absolute;
+      right: 12px;
+      background: none;
+      border: none;
+      color: var(--charcoal-faint);
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* ==========================================================================
+       HERO BRAND SHOWCASE (PALACE ART + RAJASTHANI BENEDICTIONS, NO SLOP BOXES)
+       ========================================================================== */
+    .hero-showcase {
+      padding: 22px 20px 14px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(246, 237, 232, 0.5) 0%, rgba(250, 247, 242, 0) 100%);
+      position: relative;
+    }
+
+    /* Jharokha Arch Silhouette Border around Logo */
+    .jharokha-frame {
+      position: relative;
+      display: inline-block;
+      max-width: 135px;
+      margin: 0 auto 10px auto;
+      padding: 6px;
+    }
+    .jharokha-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 4px 12px rgba(179, 84, 70, 0.08));
+    }
+
+    .rajasthan-royal-blessing {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+    .blessing-text {
+      font-family: var(--font-scripture);
+      font-size: 15px;
+      letter-spacing: 0.06em;
+      color: var(--terracotta-dark);
+    }
+    .heritage-city-sub {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--antique-brass);
+      margin-bottom: 12px;
+    }
+
+    /* Architectural Jaali Divider */
+    .jaali-divider-band {
+      width: 100%;
+      height: 12px;
+      margin: 12px 0 4px 0;
+      opacity: 0.4;
+      background-image: url("data:image/svg+xml,%3Csvg width='36' height='12' viewBox='0 0 36 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 0L9 6l9 6 9-6-9-6zm0 2.4L23.4 6 18 9.6 12.6 6 18 2.4zM0 6l9-6v12L0 6zm36 0l-9-6v12l9-6z' fill='%23B35446' fill-rule='evenodd'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+    }
+
+    /* ==========================================================================
+       FLUSH STICKY CATEGORY NAV (ZERO CLIPPING / ZERO CUTOFF ON MOBILE)
+       ========================================================================== */
+    .sticky-cat-wrapper {
+      position: sticky;
+      top: var(--nav-height);
+      z-index: 75;
+      background: rgba(250, 247, 242, 0.98);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 8px 12px;
+      box-shadow: 0 4px 14px rgba(24, 21, 20, 0.03);
+    }
+
+    .cat-nav-scroll {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      overflow-x: auto;
+      overflow-y: visible;
+      padding: 4px 2px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .cat-nav-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* All Categories Quick Jump Drawer Trigger Pill */
+    .cat-nav-index-btn {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6.5px 12px;
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-pill);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--charcoal-ink);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s var(--ease-out-expo);
+    }
+    .cat-nav-index-btn:hover {
+      background: var(--terracotta-soft);
+      border-color: var(--terracotta-border);
+      color: var(--terracotta-dark);
+    }
+    .cat-nav-index-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .cat-nav-pill {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6.5px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--charcoal-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s var(--ease-out-expo);
+    }
+    .cat-nav-pill svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--charcoal-faint);
+      transition: stroke 0.2s;
+    }
+    .cat-nav-pill.active {
+      background: var(--charcoal-ink);
+      border-color: var(--charcoal-ink);
+      color: #FFFFFF;
+      font-weight: 600;
+      box-shadow: 0 3px 10px rgba(24, 21, 20, 0.16);
+    }
+    .cat-nav-pill.active svg {
+      stroke: var(--antique-brass-light);
+    }
+
+    /* ==========================================================================
+       MENU SECTIONS & DISH CARDS
+       ========================================================================== */
+    .menu-main-content {
+      padding: 16px;
+    }
+
+    .category-section {
+      margin-bottom: 30px;
+      scroll-margin-top: 112px;
+    }
+
+    .cat-header-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .cat-header-title {
+      font-family: var(--font-display);
+      font-size: 21px;
+      letter-spacing: 0.05em;
+      color: var(--charcoal-ink);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cat-header-count {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+
+    /* Standard Card Layout */
+    .dishes-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .dish-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      gap: 14px;
+      padding: 12px;
+      transition: transform 0.2s var(--ease-out-expo), box-shadow 0.2s var(--ease-out-expo), border-color 0.2s;
+      position: relative;
+      cursor: pointer;
+    }
+    .dish-card:hover {
+      border-color: var(--terracotta-border);
+      box-shadow: var(--shadow-elevation);
+    }
+
+    /* ==========================================================================
+       4 MAHARANI SIGNATURE DISHES IN DEEP ROYAL BLACK ONYX (#181514)
+       ========================================================================== */
+    .dish-card.maharani-signature-black {
+      background: var(--charcoal-ink);
+      border: 1px solid rgba(194, 155, 98, 0.5);
+      box-shadow: 0 6px 20px rgba(24, 21, 20, 0.22);
+      color: #FAF7F2;
+    }
+    .dish-card.maharani-signature-black:hover {
+      border-color: var(--antique-brass);
+      box-shadow: 0 10px 30px rgba(24, 21, 20, 0.35);
+    }
+    .dish-card.maharani-signature-black .dish-title {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .dish-card.maharani-signature-black .dish-desc {
+      color: rgba(250, 247, 242, 0.74);
+    }
+    .dish-card.maharani-signature-black .dish-price {
+      color: var(--antique-brass-light);
+    }
+    .dish-card.maharani-signature-black .signature-badge {
+      background: rgba(194, 155, 98, 0.15);
+      border: 1px solid var(--antique-brass);
+      color: var(--antique-brass-light);
+    }
+    .dish-card.maharani-signature-black .btn-add-primary {
+      background: var(--antique-brass);
+      color: var(--charcoal-ink);
+      font-weight: 800;
+    }
+    .dish-card.maharani-signature-black .btn-add-primary:hover {
+      background: var(--antique-brass-light);
+    }
+
+    .dish-card-thumb-wrap {
+      position: relative;
+      width: 104px;
+      height: 104px;
+      flex-shrink: 0;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: var(--bg-sandstone);
+    }
+    .dish-card-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s var(--ease-out-expo);
+    }
+    .dish-card:hover .dish-card-thumb {
+      transform: scale(1.06);
+    }
+
+    .dish-card-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+    }
+
+    .dish-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+    .signature-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #FFF7ED;
+      border: 1px solid rgba(194, 155, 98, 0.4);
+      border-radius: var(--radius-xs);
+      padding: 1.5px 6px;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #92400E;
+    }
+
+    .dish-title {
+      font-family: var(--font-display);
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      color: var(--charcoal-ink);
+      line-height: 1.25;
+      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .dish-desc {
+      font-size: 12px;
+      color: var(--charcoal-muted);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .dish-bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+
+    .dish-price {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--charcoal-ink);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Card Add Button / Stepper */
+    .card-stepper-wrap {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn-add-primary {
+      background: var(--terracotta);
+      color: #FFFFFF;
+      border: none;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s var(--ease-out-expo);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-add-primary:hover {
+      background: var(--terracotta-dark);
+      transform: translateY(-1px);
+    }
+    .btn-add-primary:active {
+      transform: scale(0.96);
+    }
+
+    .card-active-stepper {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: var(--charcoal-ink);
+      border-radius: var(--radius-pill);
+      padding: 3px 6px;
+    }
+    .card-active-stepper.active {
+      display: inline-flex;
+    }
+    .stepper-btn {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--charcoal-surface);
+      color: #FFFFFF;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.15s;
+    }
+    .stepper-btn:hover {
+      background: var(--terracotta);
+    }
+    .stepper-count {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #FFFFFF;
+      min-width: 16px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Veg Indicator Dot */
+    .fssai-veg-dot {
+      width: 12px;
+      height: 12px;
+      border: 1.5px solid var(--veg-green);
+      border-radius: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+    }
+    .fssai-veg-dot::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--veg-green);
+    }
+
+    /* ==========================================================================
+       FLOATING GUEST CART BAR (SLIDES UP ON ADD)
+       ========================================================================== */
+    .floating-cart-bar {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(120%);
+      width: calc(100% - 32px);
+      max-width: 500px;
+      z-index: 90;
+      background: var(--charcoal-ink);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-float);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      transition: transform 0.35s var(--ease-out-expo);
+      cursor: pointer;
+    }
+    .floating-cart-bar.visible {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .cart-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .cart-badge-pill {
+      background: var(--terracotta);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+    }
+    .cart-bar-total {
+      font-size: 16px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .cart-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--antique-brass-light);
+    }
+    .cart-bar-right svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ==========================================================================
+       MODALS & SLIDE-UP BOTTOM SHEETS
+       ========================================================================== */
+    .sheet-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(24, 21, 20, 0.65);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s var(--ease-out-expo);
+    }
+    .sheet-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .bottom-sheet {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(105%);
+      width: 100%;
+      max-width: 540px;
+      max-height: 90vh;
+      background: var(--bg-canvas);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      z-index: 101;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.25);
+      transition: transform 0.35s var(--ease-out-expo);
+    }
+    .bottom-sheet.open {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .sheet-drag-handle-wrap {
+      width: 100%;
+      padding: 10px 0 6px 0;
+      display: flex;
+      justify-content: center;
+      background: var(--bg-canvas);
+      cursor: pointer;
+    }
+    .sheet-drag-handle {
+      width: 38px;
+      height: 4px;
+      border-radius: var(--radius-pill);
+      background: var(--border-medium);
+    }
+
+    /* Dish Detail Sheet Specifics */
+    .dish-detail-scroll {
+      overflow-y: auto;
+      padding: 0 20px 24px 20px;
+    }
+    .detail-hero-media {
+      width: 100%;
+      height: 240px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 16px;
+      background: var(--bg-sandstone);
+      position: relative;
+    }
+    .detail-hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .detail-title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .detail-dish-name {
+      font-family: var(--font-display);
+      font-size: 24px;
+      line-height: 1.2;
+      color: var(--charcoal-ink);
+    }
+    .detail-dish-price {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--charcoal-ink);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .detail-dish-desc {
+      font-size: 13.5px;
+      color: var(--charcoal-muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .special-instruction-box {
+      margin-bottom: 20px;
+    }
+    .special-instruction-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--charcoal-muted);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .special-instruction-input {
+      width: 100%;
+      padding: 10px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--charcoal-ink);
+      outline: none;
+      resize: vertical;
+      min-height: 60px;
+    }
+    .special-instruction-input:focus {
+      border-color: var(--terracotta);
+    }
+
+    .detail-footer-bar {
+      padding: 14px 20px;
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .detail-stepper {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-pill);
+      padding: 4px 8px;
+    }
+    .detail-btn-action {
+      flex: 1;
+      padding: 14px;
+      background: var(--terracotta);
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--radius-pill);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .detail-btn-action:hover {
+      background: var(--terracotta-dark);
+    }
+
+    /* ==========================================================================
+       CART & CHECKOUT SHEET (STRICTLY ONE ORDER BUTTON)
+       ========================================================================== */
+    .cart-sheet-header {
+      padding: 12px 20px 14px 20px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cart-sheet-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      letter-spacing: 0.04em;
+    }
+    .sheet-close-btn {
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: var(--charcoal-faint);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .cart-sheet-body {
+      overflow-y: auto;
+      padding: 16px 20px;
+      max-height: 65vh;
+    }
+
+    /* Dining Mode Switch */
+    .dining-toggle-group {
+      display: flex;
+      background: var(--bg-sandstone);
+      border-radius: var(--radius-pill);
+      padding: 3px;
+      margin-bottom: 16px;
+    }
+    .dining-toggle-btn {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      background: transparent;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--charcoal-muted);
+      cursor: pointer;
+      transition: all 0.2s var(--ease-out-expo);
+      text-align: center;
+    }
+    .dining-toggle-btn.active {
+      background: var(--charcoal-ink);
+      color: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(24, 21, 20, 0.15);
+    }
+
+    /* Table Picker Chips */
+    .table-chips-section {
+      margin-bottom: 18px;
+    }
+    .table-chips-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--charcoal-muted);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .table-chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .table-chip {
+      padding: 6px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--charcoal-ink);
+      cursor: pointer;
+      transition: all 0.18s;
+    }
+    .table-chip.active {
+      background: var(--terracotta-soft);
+      border-color: var(--terracotta);
+      color: var(--terracotta-dark);
+      font-weight: 700;
+    }
+
+    /* Guest Details (Optional) */
+    .guest-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .guest-field-wrap label {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--charcoal-muted);
+      margin-bottom: 4px;
+    }
+    .guest-input {
+      width: 100%;
+      padding: 8px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 12.5px;
+      color: var(--charcoal-ink);
+      outline: none;
+    }
+
+    /* Cart Items List */
+    .cart-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .cart-item-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .cart-item-title {
+      font-family: var(--font-display);
+      font-size: 15px;
+      color: var(--charcoal-ink);
+      margin-bottom: 2px;
+    }
+    .cart-item-instruction {
+      font-size: 11px;
+      color: var(--terracotta-dark);
+      font-style: italic;
+      margin-top: 2px;
+    }
+    .cart-item-pricing {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--charcoal-ink);
+      font-variant-numeric: tabular-nums;
+      margin-top: 4px;
+    }
+    .cart-row-stepper {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-sandstone);
+      padding: 2px 6px;
+      border-radius: var(--radius-pill);
+    }
+
+    /* Bill Summary */
+    .bill-summary-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+    .bill-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: var(--charcoal-muted);
+      margin-bottom: 6px;
+    }
+    .bill-line.total-line {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--charcoal-ink);
+      padding-top: 8px;
+      border-top: 1px dashed var(--border-medium);
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    /* SINGLE ACTION ORDER BUTTON (NO KITCHEN / NO DUAL BUTTONS) */
+    .cart-sheet-footer {
+      padding: 14px 20px;
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .btn-whatsapp-order {
+      width: 100%;
+      padding: 15px;
+      background: #128C7E;
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--radius-pill);
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(18, 140, 126, 0.3);
+      transition: all 0.2s var(--ease-out-expo);
+    }
+    .btn-whatsapp-order:hover {
+      background: #075E54;
+      transform: translateY(-1px);
+    }
+    .btn-whatsapp-order svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* ==========================================================================
+       MENU INDEX DIRECTORY SHEET
+       ========================================================================== */
+    .directory-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px 20px;
+    }
+    .directory-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      color: var(--charcoal-ink);
+      font-family: var(--font-display);
+      font-size: 16px;
+      transition: all 0.18s;
+    }
+    .directory-item:hover {
+      background: var(--terracotta-soft);
+      border-color: var(--terracotta-border);
+      color: var(--terracotta-dark);
+      transform: translateX(4px);
+    }
+    .directory-item span {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--charcoal-faint);
+    }
+
+    /* Empty state */
+    .empty-search-state {
+      text-align: center;
+      padding: 48px 20px;
+      display: none;
+    }
+    .empty-search-state.visible {
+      display: block;
+    }
+    .empty-search-state p {
+      font-size: 14px;
+      color: var(--charcoal-muted);
+      margin-top: 8px;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Linen Watermark Texture -->
+  <div class="linen-watermark"></div>
+
+  <div class="viewport-container">
+
+    <!-- REDESIGNED LUXURY TOP NAVBAR (NO TABLE 04, SYMMETRICAL EDITORIAL BEAUTY) -->
+    <header class="top-app-bar">
+      <div class="nav-left-seal">
+        <!-- SVG Rajput Jharokha Arch Crest Monogram -->
+        <svg class="nav-seal-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8 6 4 9 4 15a8 8 0 0016 0c0-6-4-9-8-13z"/>
+          <path d="M12 7c-2 2-4 4-4 8a4 4 0 008 0c0-4-2-6-4-8z"/>
+          <line x1="12" y1="2" x2="12" y2="4"/>
+        </svg>
+      </div>
+
+      <div class="app-brand-lockup">
+        <h1>Maharani Cafe</h1>
+        <span>Jaipur</span>
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-action-btn" id="searchToggleBtn" aria-label="Search Dishes">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- EXPANDABLE SEARCH PANEL -->
+    <div class="search-panel" id="searchPanel">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-input" id="menuSearchInput" placeholder="Search pizza, momos, panini, sandwich..." />
+        <button class="search-clear-btn" id="searchClearBtn" style="display:none;">✕</button>
+      </div>
+    </div>
+
+    <!-- HERO BRAND SHOWCASE (PALACE ART + CULTURAL BENEDICTION, NO SLOP BOXES) -->
+    <section class="hero-showcase">
+      <div class="jharokha-frame">
+        <img src="maharani_logo_transparent.png" alt="Maharani Cafe Jaipur Heritage Palace" />
+      </div>
+
+      <div class="rajasthan-royal-blessing">
+        <span class="blessing-text">॥ खम्मा घणी सा ॥</span>
+        <span class="blessing-text">॥ अतिथि देवो भवः ॥</span>
+      </div>
+      <div class="heritage-city-sub">Pure Vegetarian Cuisine • Established in Jaipur</div>
+
+      <!-- Architectural Jaali Divider -->
+      <div class="jaali-divider-band"></div>
+    </section>
+
+    <!-- FLUSH STICKY CATEGORY NAV (ZERO OVERLAP / ZERO CUTOFF ON MOBILE) -->
+    <div class="sticky-cat-wrapper" id="stickyCatWrapper">
+      <div class="cat-nav-scroll" id="catNavScroll">
+        <!-- Rendered via JS: [☰ Categories] + Category Tabs -->
+      </div>
+    </div>
+
+    <!-- MAIN MENU CONTENT -->
+    <main class="menu-main-content" id="menuMainContent">
+      <!-- Dish sections rendered dynamically -->
+    </main>
+
+    <!-- EMPTY SEARCH STATE -->
+    <div class="empty-search-state" id="emptySearchState">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--terracotta)" stroke-width="1.5" style="margin: 0 auto; display:block;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>No culinary dishes found matching your search.</p>
+    </div>
+
+  </div> <!-- /viewport-container -->
+
+  <!-- FLOATING GUEST CART BAR (Appears automatically when items > 0) -->
+  <aside class="floating-cart-bar" id="floatingCartBar" aria-label="View Order Cart">
+    <div class="cart-bar-left">
+      <span class="cart-badge-pill" id="cartBarCount">0</span>
+      <span class="cart-bar-total" id="cartBarTotal">₹0</span>
+    </div>
+    <div class="cart-bar-right">
+      <span>Review Order</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </aside>
+
+  <!-- SHEET BACKDROP -->
+  <div class="sheet-backdrop" id="sheetBackdrop"></div>
+
+  <!-- DISH DETAIL BOTTOM SHEET -->
+  <div class="bottom-sheet" id="dishDetailSheet">
+    <div class="sheet-drag-handle-wrap" id="dishSheetHandle">
+      <div class="sheet-drag-handle"></div>
+    </div>
+    <div class="dish-detail-scroll">
+      <div class="detail-hero-media">
+        <img id="detailImg" src="" alt="Dish Preview" />
+      </div>
+
+      <div class="detail-title-row">
+        <div>
+          <div class="dish-meta-row" id="detailMetaRow"></div>
+          <h3 class="detail-dish-name" id="detailName"></h3>
+        </div>
+        <div class="detail-dish-price" id="detailPrice"></div>
+      </div>
+
+      <p class="detail-dish-desc" id="detailDesc"></p>
+
+      <div class="special-instruction-box">
+        <label class="special-instruction-label" for="detailSpecialNote">Special Cooking Preferences (Optional)</label>
+        <textarea class="special-instruction-input" id="detailSpecialNote" placeholder="e.g. Extra crispy, mild spicy, Jain preparation, no onion-garlic..."></textarea>
+      </div>
+    </div>
+
+    <div class="detail-footer-bar">
+      <div class="detail-stepper">
+        <button class="stepper-btn" id="detailDecBtn">−</button>
+        <span class="stepper-count" id="detailQty">1</span>
+        <button class="stepper-btn" id="detailIncBtn">+</button>
+      </div>
+      <button class="detail-btn-action" id="detailAddBtn">Add to Order — ₹0</button>
+    </div>
+  </div>
+
+  <!-- CART & CHECKOUT SHEET -->
+  <div class="bottom-sheet" id="cartCheckoutSheet">
+    <div class="sheet-drag-handle-wrap" id="cartSheetHandle">
+      <div class="sheet-drag-handle"></div>
+    </div>
+
+    <div class="cart-sheet-header">
+      <h3 class="cart-sheet-title">Your Royal Order</h3>
+      <button class="sheet-close-btn" id="cartCloseBtn">✕</button>
+    </div>
+
+    <div class="cart-sheet-body">
+      <!-- Dining Mode Switch -->
+      <div class="dining-toggle-group">
+        <button class="dining-toggle-btn active" data-mode="Dine In">Dine In</button>
+        <button class="dining-toggle-btn" data-mode="Takeaway">Takeaway / Parcel</button>
+      </div>
+
+      <!-- Table Selector Chips -->
+      <div class="table-chips-section" id="tableChipsSection">
+        <label class="table-chips-label">Select Your Table</label>
+        <div class="table-chips-row">
+          <button class="table-chip active" data-table="Table 01">Table 01</button>
+          <button class="table-chip" data-table="Table 02">Table 02</button>
+          <button class="table-chip" data-table="Table 03">Table 03</button>
+          <button class="table-chip" data-table="Table 04">Table 04</button>
+          <button class="table-chip" data-table="Table 05">Table 05</button>
+          <button class="table-chip" data-table="Table 06">Table 06</button>
+          <button class="table-chip" data-table="Table 07">Table 07</button>
+          <button class="table-chip" data-table="Table 08">Table 08</button>
+          <button class="table-chip" data-table="Courtyard Patio">Courtyard Patio</button>
+        </div>
+      </div>
+
+      <!-- Guest Info (Optional) -->
+      <div class="guest-info-grid">
+        <div class="guest-field-wrap">
+          <label for="guestNameInput">Your Name</label>
+          <input type="text" class="guest-input" id="guestNameInput" placeholder="Guest name" />
+        </div>
+        <div class="guest-field-wrap">
+          <label for="guestPhoneInput">WhatsApp No. (Optional)</label>
+          <input type="tel" class="guest-input" id="guestPhoneInput" placeholder="Mobile number" />
+        </div>
+      </div>
+
+      <!-- Itemized Cart List -->
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Bill Breakdown -->
+      <div class="bill-summary-card">
+        <div class="bill-line">
+          <span>Items Subtotal</span>
+          <span id="billSubtotal">₹0</span>
+        </div>
+        <div class="bill-line">
+          <span>GST (5% SGST & CGST)</span>
+          <span id="billGst">₹0</span>
+        </div>
+        <div class="bill-line total-line">
+          <span>Grand Total</span>
+          <span id="billGrandTotal">₹0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STRICTLY ONE SINGLE ORDER ACTION -->
+    <div class="cart-sheet-footer">
+      <button class="btn-whatsapp-order" id="btnPlaceOrderWhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.42C8.94 7.42 8.67 7.48 8.44 7.73C8.21 7.98 7.56 8.59 7.56 9.83C7.56 11.07 8.46 12.27 8.58 12.44C8.71 12.61 10.36 15.15 12.87 16.24C13.47 16.5 13.94 16.65 14.3 16.77C14.9 16.96 15.45 16.93 15.89 16.87C16.38 16.8 17.39 16.26 17.6 15.68C17.81 15.1 17.81 14.61 17.75 14.51C17.69 14.41 17.52 14.35 17.27 14.22C17.02 14.1 15.79 13.49 15.56 13.41C15.33 13.33 15.17 13.29 15 13.54C14.83 13.79 14.37 14.35 14.23 14.51C14.09 14.67 13.95 14.69 13.7 14.57C13.45 14.45 12.65 14.18 11.7 13.34C10.96 12.68 10.46 11.87 10.32 11.62C10.18 11.37 10.3 11.24 10.43 11.11C10.54 11 10.68 10.82 10.81 10.68C10.94 10.54 10.98 10.44 11.06 10.28C11.14 10.12 11.1 9.98 11.04 9.86C10.98 9.74 10.52 8.6 10.33 8.14C10.14 7.69 9.96 7.75 9.82 7.74C9.69 7.73 9.53 7.73 9.37 7.73L9.11 7.42Z"/></svg>
+        <span>Confirm & Order on WhatsApp</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MENU DIRECTORY BOTTOM SHEET -->
+  <div class="bottom-sheet" id="directorySheet">
+    <div class="sheet-drag-handle-wrap" id="directorySheetHandle">
+      <div class="sheet-drag-handle"></div>
+    </div>
+    <div class="cart-sheet-header">
+      <h3 class="cart-sheet-title">Menu Directory</h3>
+      <button class="sheet-close-btn" id="directoryCloseBtn">✕</button>
+    </div>
+    <div class="directory-list" id="directoryList">
+      <!-- Rendered via JS -->
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT: Bespoke Client Experience Engine -->
+  <script>
+    // Data injected from Python
+    const MENU_DATA = [{"id": "fries", "name": "Fries", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 10l2 11h8l2-11\"/><path d=\"M9 10V5a1 1 0 011-1h1a1 1 0 011 1v5\"/><path d=\"M13 10V3a1 1 0 011-1h1a1 1 0 011 1v7\"/><path d=\"M5 10l1-5a1 1 0 011-1h1v6\"/><path d=\"M17 10l1-5a1 1 0 011-1h0a1 1 0 011 1l-1 5\"/></svg>", "items": [{"id": "fries-1", "name": "Classic French Fries", "clean_name": "Classic French Fries", "desc": "Golden crisp salted potato fries served with dip.", "price": 79, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?w=600&auto=format&fit=crop&q=80"}, {"id": "fries-2", "name": "Peri Peri Fries", "clean_name": "Peri Peri Fries", "desc": "Crispy fries tossed in zesty African peri-peri spice mix.", "price": 99, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=600&auto=format&fit=crop&q=80"}, {"id": "fries-3", "name": "Cheese Fries", "clean_name": "Cheese Fries", "desc": "Crisp fries smothered in rich, creamy warm cheese sauce.", "price": 120, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?w=600&auto=format&fit=crop&q=80"}, {"id": "fries-4", "name": "Loaded Fries", "clean_name": "Loaded Fries", "desc": "Ultimate fries loaded with melted cheese, jalapenos, olives & signature sauces.", "price": 150, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&auto=format&fit=crop&q=80"}]}, {"id": "momos", "name": "Momos", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 4c-5 0-9 4-9 9 0 4 4 7 9 7s9-3 9-7c0-5-4-9-9-9z\"/><path d=\"M12 4v6\"/><path d=\"M7 8c2 2 3 5 3 6\"/><path d=\"M17 8c-2 2-3 5-3 6\"/><ellipse cx=\"12\" cy=\"17\" rx=\"5\" ry=\"2\"/></svg>", "items": [{"id": "momos-1", "name": "Steamed Momos", "clean_name": "Steamed Momos", "desc": "Delicate steamed dumplings stuffed with fresh minced garden vegetables.", "price": 79, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=600&auto=format&fit=crop&q=80"}, {"id": "momos-2", "name": "Fried Momos", "clean_name": "Fried Momos", "desc": "Golden deep-fried dumplings with a crisp outer crust and juicy filling.", "price": 100, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?w=600&auto=format&fit=crop&q=80"}, {"id": "momos-3", "name": "Chilli Momos", "clean_name": "Chilli Momos", "desc": "Crispy momos tossed in spicy Indo-Chinese chilli garlic wok sauce.", "price": 110, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600&auto=format&fit=crop&q=80"}]}, {"id": "toast", "name": "Toast", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 9c0-3.3 2.7-6 6-6s6 2.7 6 6c1.1 0 2 .9 2 2v7c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3v-7c0-1.1.9-2 2-2z\"/><path d=\"M8 12h8\"/><path d=\"M8 15h5\"/></svg>", "items": [{"id": "toast-1", "name": "Chilli Cheese Toast", "clean_name": "Chilli Cheese Toast", "desc": "Toasted bread topped with molten cheese, finely chopped green chillies & herbs.", "price": 99, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80"}, {"id": "toast-2", "name": "Cheese Garlic Toast", "clean_name": "Cheese Garlic Toast", "desc": "Crispy bread rubbed with roasted garlic butter and smothered in cheese.", "price": 120, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&auto=format&fit=crop&q=80"}, {"id": "toast-3", "name": "Masala Garlic Toast", "clean_name": "Masala Garlic Toast", "desc": "Garlic toast with a zesty Indian spiced veggie topping and bubbling cheese.", "price": 120, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1584776296944-ab6fb57b0bdd?w=600&auto=format&fit=crop&q=80"}]}, {"id": "sandwiches", "name": "Sandwiches", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 11l18-7v14L3 11z\"/><path d=\"M3 11h18\"/><path d=\"M6 14h12\"/><path d=\"M9 17h6\"/></svg>", "items": [{"id": "sand-1", "name": "Veg Sandwich", "clean_name": "Veg Sandwich", "desc": "Fresh cucumber, tomato, onion and mint chutney grilled to golden perfection.", "price": 89, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80"}, {"id": "sand-2", "name": "Cheese Corn Sandwich", "clean_name": "Cheese Corn Sandwich", "desc": "Juicy sweet corn kernels and melted cheese with mild Italian seasoning.", "price": 120, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=600&auto=format&fit=crop&q=80"}, {"id": "sand-3", "name": "Veg Paneer Sandwich", "clean_name": "Veg Paneer Sandwich", "desc": "Soft spiced malai paneer cubes, crunchy veggies and layered cheese.", "price": 140, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?w=600&auto=format&fit=crop&q=80"}, {"id": "sand-4", "name": "Peri Peri Paneer Sandwich", "clean_name": "Peri Peri Paneer Sandwich", "desc": "Marinated peri-peri paneer with caramelised bell peppers and spicy mayo.", "price": 150, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1521390188846-e2a39b7ef4a8?w=600&auto=format&fit=crop&q=80"}, {"id": "sand-5", "name": "👑 Maharani Special Sandwich", "clean_name": "Maharani Special Sandwich", "desc": "Grilled vegetables, paneer, sweet corn, caramelised onions and signature Maharani sauce.", "price": 180, "veg": true, "is_maharani": true, "image": "https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=600&auto=format&fit=crop&q=80"}]}, {"id": "wraps", "name": "Wraps", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"10\" rx=\"5\"/><circle cx=\"8\" cy=\"12\" r=\"2\"/><path d=\"M13 9.5l3 5\"/><path d=\"M16 9.5l-3 5\"/></svg>", "items": [{"id": "wrap-1", "name": "Veggie Wrap", "clean_name": "Veggie Wrap", "desc": "Crunchy fresh vegetables and creamy herb dressing rolled in soft tortilla.", "price": 79, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&auto=format&fit=crop&q=80"}, {"id": "wrap-2", "name": "Cheese Veggie Wrap", "clean_name": "Cheese Veggie Wrap", "desc": "Garden fresh veggies infused with melted cheese spread and tangy relish.", "price": 100, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&auto=format&fit=crop&q=80"}, {"id": "wrap-3", "name": "Cottage Cheese Wrap", "clean_name": "Cottage Cheese Wrap", "desc": "Tender paneer cubes tossed in house spices with crunchy bell peppers.", "price": 120, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80"}]}, {"id": "burgers", "name": "Burgers", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 11c0-4.4 3.6-8 8-8s8 3.6 8 8H4z\"/><rect x=\"2\" y=\"14\" width=\"20\" height=\"3\" rx=\"1.5\"/><path d=\"M4 19c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3H4z\"/><path d=\"M6 14c1 1 2 1 3 0s2-1 3 0 2 1 3 0 2-1 3 0\"/></svg>", "items": [{"id": "burger-1", "name": "Aloo Tikki Burger", "clean_name": "Aloo Tikki Burger", "desc": "Crisp golden spiced potato patty with tomato, onion slice and burger sauce.", "price": 79, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=80"}, {"id": "burger-2", "name": "Super Veggie Burger", "clean_name": "Super Veggie Burger", "desc": "Wholesome mixed vegetable patty, crisp lettuce, tomato and creamy mayo.", "price": 100, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=600&auto=format&fit=crop&q=80"}, {"id": "burger-3", "name": "Cottage Cheese Burger", "clean_name": "Cottage Cheese Burger", "desc": "Thick paneer patty grilled with herbs, layered with cheese and fresh crunch.", "price": 120, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=600&auto=format&fit=crop&q=80"}, {"id": "burger-4", "name": "👑 Maharani Special Burger", "clean_name": "Maharani Special Burger", "desc": "Crispy patty, fresh veggies, cheese, caramelised onions and signature Maharani sauce.", "price": 150, "veg": true, "is_maharani": true, "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80"}]}, {"id": "panini", "name": "Panini", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"6\" width=\"18\" height=\"12\" rx=\"3\"/><line x1=\"7\" y1=\"6\" x2=\"11\" y2=\"18\"/><line x1=\"13\" y1=\"6\" x2=\"17\" y2=\"18\"/></svg>", "items": [{"id": "panini-1", "name": "Classic Veg Panini", "clean_name": "Classic Veg Panini", "desc": "Italian ciabatta bread pressed hot with garden veggies and mozzarella.", "price": 140, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&auto=format&fit=crop&q=80"}, {"id": "panini-2", "name": "Cheese Corn Panini", "clean_name": "Cheese Corn Panini", "desc": "Golden sweet corn, melted mozzarella and cheddar in a crisp pressed loaf.", "price": 150, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1619096252214-ef06c45683e3?w=600&auto=format&fit=crop&q=80"}, {"id": "panini-3", "name": "Pesto Veg Panini", "clean_name": "Pesto Veg Panini", "desc": "Fragrant basil pesto, roasted bell peppers, zucchini and melted cheese.", "price": 160, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80"}, {"id": "panini-4", "name": "Peri Peri Paneer Panini", "clean_name": "Peri Peri Paneer Panini", "desc": "Fiery peri-peri spiced paneer ribbons with onions and molten cheese.", "price": 170, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1554433607-66b5efe9d304?w=600&auto=format&fit=crop&q=80"}, {"id": "panini-5", "name": "Pesto Paneer Panini", "clean_name": "Pesto Paneer Panini", "desc": "Tender malai paneer grilled with Italian herb pesto and gooey cheese.", "price": 180, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=600&auto=format&fit=crop&q=80"}, {"id": "panini-6", "name": "👑 Maharani Special Panini", "clean_name": "Maharani Special Panini", "desc": "Pesto, paneer, roasted vegetables, melted cheese and signature Maharani sauce.", "price": 200, "veg": true, "is_maharani": true, "image": "https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?w=600&auto=format&fit=crop&q=80"}]}, {"id": "pizza", "name": "Pizza", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2l10 17a2 2 0 01-1.7 3H3.7A2 2 0 012 19L12 2z\"/><circle cx=\"12\" cy=\"11\" r=\"1.5\"/><circle cx=\"9\" cy=\"16\" r=\"1.5\"/><circle cx=\"15\" cy=\"16\" r=\"1.5\"/></svg>", "items": [{"id": "pizza-1", "name": "Margherita Pizza", "clean_name": "Margherita Pizza", "desc": "Classic tomato basil herb sauce blanketed with melted mozzarella cheese.", "price": 139, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&auto=format&fit=crop&q=80"}, {"id": "pizza-2", "name": "Cheese, Onion & Capsicum Pizza", "clean_name": "Cheese, Onion & Capsicum Pizza", "desc": "Crisp onions, diced green capsicum and bubbling golden mozzarella.", "price": 150, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80"}, {"id": "pizza-3", "name": "Farmhouse Pizza", "clean_name": "Farmhouse Pizza", "desc": "Loaded with mushrooms, sweet corn, crisp capsicum, onions and black olives.", "price": 180, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80"}, {"id": "pizza-4", "name": "Tandoori Paneer Pizza", "clean_name": "Tandoori Paneer Pizza", "desc": "Marinated tandoori paneer tikka, red paprika, onions and coriander garnish.", "price": 200, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=600&auto=format&fit=crop&q=80"}, {"id": "pizza-5", "name": "👑 Maharani Special Pizza", "clean_name": "Maharani Special Pizza", "desc": "Paneer, bell peppers, onions, olives, melted cheese and signature Maharani sauce.", "price": 230, "veg": true, "is_maharani": true, "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&auto=format&fit=crop&q=80"}]}, {"id": "icecream", "name": "Ice Cream", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/></svg>", "items": [{"id": "ice-1", "name": "Vanilla Ice Cream", "clean_name": "Vanilla Ice Cream", "desc": "Smooth, rich Madagascar vanilla bean churned cream.", "price": 49, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1560008581-09826d1de69e?w=600&auto=format&fit=crop&q=80"}, {"id": "ice-2", "name": "Strawberry Ice Cream", "clean_name": "Strawberry Ice Cream", "desc": "Refreshing berry cream with natural strawberry notes.", "price": 49, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&auto=format&fit=crop&q=80"}, {"id": "ice-3", "name": "Chocolate Ice Cream", "clean_name": "Chocolate Ice Cream", "desc": "Rich cocoa cream churned to decadent smoothness.", "price": 49, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&auto=format&fit=crop&q=80"}, {"id": "ice-4", "name": "Belgian Chocolate Ice Cream", "clean_name": "Belgian Chocolate Ice Cream", "desc": "Intense dark Belgian chocolate with luxurious silky texture.", "price": 49, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=600&auto=format&fit=crop&q=80"}]}, {"id": "addons", "name": "Add-ons", "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"/><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"/></svg>", "items": [{"id": "addon-1", "name": "Mayonnaise", "clean_name": "Mayonnaise", "desc": "Extra creamy garlic-herb dip.", "price": 30, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=600&auto=format&fit=crop&q=80"}, {"id": "addon-2", "name": "Schezwan Sauce", "clean_name": "Schezwan Sauce", "desc": "Spicy red chilli and Sichuan pepper wok dip.", "price": 30, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&auto=format&fit=crop&q=80"}, {"id": "addon-3", "name": "Sweet Chilli Sauce", "clean_name": "Sweet Chilli Sauce", "desc": "Tangy sweet and mildly spiced dipping sauce.", "price": 30, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=600&auto=format&fit=crop&q=80"}, {"id": "addon-4", "name": "Cheese Slice", "clean_name": "Cheese Slice", "desc": "Extra processed cheddar slice melted over your dish.", "price": 30, "veg": true, "is_maharani": false, "image": "https://images.unsplash.com/photo-1624806992066-5ffcf7ca186b?w=600&auto=format&fit=crop&q=80"}]}];
+
+    // State
+    const state = {
+      activeCategory: MENU_DATA[0].id,
+      diningMode: 'Dine In',
+      table: 'Table 04',
+      guestName: localStorage.getItem('maharani_guest_name') || '',
+      guestPhone: localStorage.getItem('maharani_guest_phone') || '',
+      searchQuery: '',
+      cart: {}, // dishId -> { dish, qty, specialNote }
+      currentModalDish: null,
+      modalQty: 1
+    };
+
+    // Audio Feedback for High-End Tactile Feel (Leica/Braun style mechanical click)
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    let audioCtx = null;
+    function playTactileClick() {
+      try {
+        if (!audioCtx) audioCtx = new AudioContext();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(200, audioCtx.currentTime + 0.03);
+        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.03);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.035);
+      } catch (e) {}
+    }
+
+    // Elements
+    const catNavScroll = document.getElementById('catNavScroll');
+    const menuMainContent = document.getElementById('menuMainContent');
+    const searchToggleBtn = document.getElementById('searchToggleBtn');
+    const searchPanel = document.getElementById('searchPanel');
+    const menuSearchInput = document.getElementById('menuSearchInput');
+    const searchClearBtn = document.getElementById('searchClearBtn');
+    const emptySearchState = document.getElementById('emptySearchState');
+    const sheetBackdrop = document.getElementById('sheetBackdrop');
+    const dishDetailSheet = document.getElementById('dishDetailSheet');
+    const cartCheckoutSheet = document.getElementById('cartCheckoutSheet');
+    const directorySheet = document.getElementById('directorySheet');
+    const floatingCartBar = document.getElementById('floatingCartBar');
+    const cartBarCount = document.getElementById('cartBarCount');
+    const cartBarTotal = document.getElementById('cartBarTotal');
+
+    // Initialize Menu Tabs (Integrated [☰ Index] + Pills)
+    function renderCategoryTabs() {
+      let html = `
+        <button class="cat-nav-index-btn" id="openMenuIndexPill" aria-label="Open Category Index">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Categories</span>
+        </button>
+      `;
+
+      MENU_DATA.forEach((cat, idx) => {
+        const isActive = idx === 0 ? 'active' : '';
+        html += `
+          <button class="cat-nav-pill ${isActive}" data-cat-id="${cat.id}" id="tab-${cat.id}">
+            ${cat.svg}
+            <span>${cat.name}</span>
+          </button>
+        `;
+      });
+      catNavScroll.innerHTML = html;
+
+      // Attach index pill click
+      document.getElementById('openMenuIndexPill').addEventListener('click', () => {
+        playTactileClick();
+        openSheet(directorySheet);
+      });
+
+      catNavScroll.querySelectorAll('.cat-nav-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          playTactileClick();
+          const targetId = btn.dataset.catId;
+          const targetSection = document.getElementById('section-' + targetId);
+          if (targetSection) {
+            const topOffset = targetSection.getBoundingClientRect().top + window.pageYOffset - 105;
+            window.scrollTo({ top: topOffset, behavior: 'smooth' });
+          }
+          setActiveTab(targetId);
+        });
+      });
+    }
+
+    function setActiveTab(catId) {
+      state.activeCategory = catId;
+      catNavScroll.querySelectorAll('.cat-nav-pill').forEach(btn => {
+        const isMatch = btn.dataset.catId === catId;
+        btn.classList.toggle('active', isMatch);
+        if (isMatch) {
+          btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      });
+    }
+
+    // Render Dishes (4 Signature dishes in luxurious Black Onyx)
+    function renderDishes() {
+      const query = state.searchQuery.trim().toLowerCase();
+      let totalVisible = 0;
+      let html = '';
+
+      MENU_DATA.forEach(cat => {
+        const filteredItems = cat.items.filter(item => {
+          if (!query) return true;
+          return item.name.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query);
+        });
+
+        if (filteredItems.length === 0) return;
+        totalVisible += filteredItems.length;
+
+        html += `
+          <section class="category-section" id="section-${cat.id}">
+            <div class="cat-header-row">
+              <h2 class="cat-header-title">
+                ${cat.svg}
+                <span>${cat.name}</span>
+              </h2>
+              <span class="cat-header-count">${filteredItems.length} ${filteredItems.length === 1 ? 'Dish' : 'Dishes'}</span>
+            </div>
+            <div class="dishes-grid">
+        `;
+
+        filteredItems.forEach(item => {
+          const cartItem = state.cart[item.id];
+          const qty = cartItem ? cartItem.qty : 0;
+          const hasQty = qty > 0;
+          const isBlackSignature = item.is_maharani;
+
+          html += `
+            <article class="dish-card ${isBlackSignature ? 'maharani-signature-black' : ''}" data-dish-id="${item.id}">
+              <div class="dish-card-thumb-wrap">
+                <img class="dish-card-thumb" src="${item.image}" alt="${item.clean_name}" loading="lazy" />
+              </div>
+              <div class="dish-card-info">
+                <div>
+                  <div class="dish-meta-row">
+                    <span class="fssai-veg-dot"></span>
+                    ${item.is_maharani ? '<span class="signature-badge">👑 Royal Signature</span>' : ''}
+                  </div>
+                  <h3 class="dish-title">${item.name}</h3>
+                  <p class="dish-desc">${item.desc}</p>
+                </div>
+                <div class="dish-bottom-bar">
+                  <span class="dish-price">₹${item.price}</span>
+                  <div class="card-stepper-wrap" onclick="event.stopPropagation()">
+                    <button class="btn-add-primary" data-action="add-first" data-dish-id="${item.id}" style="display: ${hasQty ? 'none' : 'inline-flex'};">
+                      <span>+ ADD</span>
+                    </button>
+                    <div class="card-active-stepper ${hasQty ? 'active' : ''}" id="card-stepper-${item.id}">
+                      <button class="stepper-btn" data-action="card-dec" data-dish-id="${item.id}">−</button>
+                      <span class="stepper-count">${qty}</span>
+                      <button class="stepper-btn" data-action="card-inc" data-dish-id="${item.id}">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          `;
+        });
+
+        html += `
+            </div>
+          </section>
+        `;
+      });
+
+      menuMainContent.innerHTML = html;
+      emptySearchState.classList.toggle('visible', totalVisible === 0);
+
+      // Attach card click handlers
+      menuMainContent.querySelectorAll('.dish-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const dishId = card.dataset.dishId;
+          openDishDetail(dishId);
+        });
+      });
+
+      // Attach button actions
+      menuMainContent.querySelectorAll('[data-action="add-first"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          playTactileClick();
+          const dishId = btn.dataset.dishId;
+          const dish = findDishById(dishId);
+          if (dish) addToCart(dish, 1, '');
+        });
+      });
+
+      menuMainContent.querySelectorAll('[data-action="card-inc"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          playTactileClick();
+          const dishId = btn.dataset.dishId;
+          updateCartQty(dishId, 1);
+        });
+      });
+
+      menuMainContent.querySelectorAll('[data-action="card-dec"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          playTactileClick();
+          const dishId = btn.dataset.dishId;
+          updateCartQty(dishId, -1);
+        });
+      });
+    }
+
+    function findDishById(id) {
+      for (const cat of MENU_DATA) {
+        for (const it of cat.items) {
+          if (it.id === id) return it;
+        }
+      }
+      return null;
+    }
+
+    // Cart Management
+    function addToCart(dish, qty, specialNote) {
+      if (!state.cart[dish.id]) {
+        state.cart[dish.id] = { dish, qty: 0, specialNote: '' };
+      }
+      state.cart[dish.id].qty += qty;
+      if (specialNote) {
+        state.cart[dish.id].specialNote = specialNote;
+      }
+      updateCartUI();
+    }
+
+    function updateCartQty(dishId, delta) {
+      if (!state.cart[dishId]) return;
+      state.cart[dishId].qty += delta;
+      if (state.cart[dishId].qty <= 0) {
+        delete state.cart[dishId];
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      let totalQty = 0;
+      let subtotal = 0;
+
+      for (const id in state.cart) {
+        totalQty += state.cart[id].qty;
+        subtotal += state.cart[id].qty * state.cart[id].dish.price;
+      }
+
+      // Update floating bar
+      cartBarCount.textContent = totalQty;
+      cartBarTotal.textContent = '₹' + subtotal;
+      floatingCartBar.classList.toggle('visible', totalQty > 0);
+      document.body.classList.toggle('has-cart', totalQty > 0);
+
+      // Re-render dishes to update card steppers
+      renderDishes();
+      renderCartSheet();
+    }
+
+    // Dish Detail Bottom Sheet
+    function openDishDetail(dishId) {
+      playTactileClick();
+      const dish = findDishById(dishId);
+      if (!dish) return;
+
+      state.currentModalDish = dish;
+      state.modalQty = state.cart[dish.id] ? state.cart[dish.id].qty : 1;
+
+      document.getElementById('detailImg').src = dish.image;
+      document.getElementById('detailName').textContent = dish.name;
+      document.getElementById('detailPrice').textContent = '₹' + dish.price;
+      document.getElementById('detailDesc').textContent = dish.desc;
+      document.getElementById('detailSpecialNote').value = state.cart[dish.id] ? state.cart[dish.id].specialNote : '';
+      
+      const metaRow = document.getElementById('detailMetaRow');
+      metaRow.innerHTML = `
+        <span class="fssai-veg-dot"></span>
+        ${dish.is_maharani ? '<span class="signature-badge">👑 Royal Signature</span>' : ''}
+      `;
+
+      updateModalQtyUI();
+      openSheet(dishDetailSheet);
+    }
+
+    function updateModalQtyUI() {
+      document.getElementById('detailQty').textContent = state.modalQty;
+      const total = state.modalQty * state.currentModalDish.price;
+      document.getElementById('detailAddBtn').textContent = `Add to Order — ₹${total}`;
+    }
+
+    document.getElementById('detailIncBtn').addEventListener('click', () => {
+      playTactileClick();
+      state.modalQty++;
+      updateModalQtyUI();
+    });
+
+    document.getElementById('detailDecBtn').addEventListener('click', () => {
+      playTactileClick();
+      if (state.modalQty > 1) {
+        state.modalQty--;
+        updateModalQtyUI();
+      }
+    });
+
+    document.getElementById('detailAddBtn').addEventListener('click', () => {
+      playTactileClick();
+      const note = document.getElementById('detailSpecialNote').value.trim();
+      if (!state.cart[state.currentModalDish.id]) {
+        state.cart[state.currentModalDish.id] = { dish: state.currentModalDish, qty: 0, specialNote: '' };
+      }
+      state.cart[state.currentModalDish.id].qty = state.modalQty;
+      state.cart[state.currentModalDish.id].specialNote = note;
+      updateCartUI();
+      closeSheets();
+    });
+
+    // Cart Sheet Rendering
+    function renderCartSheet() {
+      const cartItemsList = document.getElementById('cartItemsList');
+      let html = '';
+      let subtotal = 0;
+
+      const items = Object.values(state.cart);
+      if (items.length === 0) {
+        cartItemsList.innerHTML = '<p style="text-align:center; padding: 20px; color: var(--charcoal-faint);">Your order cloche is currently empty.</p>';
+        document.getElementById('billSubtotal').textContent = '₹0';
+        document.getElementById('billGst').textContent = '₹0';
+        document.getElementById('billGrandTotal').textContent = '₹0';
+        return;
+      }
+
+      items.forEach(item => {
+        const itemTotal = item.qty * item.dish.price;
+        subtotal += itemTotal;
+        html += `
+          <div class="cart-item-row">
+            <div style="flex:1;">
+              <h4 class="cart-item-title">${item.dish.name}</h4>
+              ${item.specialNote ? `<div class="cart-item-instruction">“${item.specialNote}”</div>` : ''}
+              <div class="cart-item-pricing">₹${item.dish.price} × ${item.qty} = ₹${itemTotal}</div>
+            </div>
+            <div class="cart-row-stepper">
+              <button class="stepper-btn" onclick="updateCartQty('${item.dish.id}', -1)">−</button>
+              <span class="stepper-count">${item.qty}</span>
+              <button class="stepper-btn" onclick="updateCartQty('${item.dish.id}', 1)">+</button>
+            </div>
+          </div>
+        `;
+      });
+
+      cartItemsList.innerHTML = html;
+
+      const gst = Math.round(subtotal * 0.05 * 100) / 100;
+      const grandTotal = Math.round((subtotal + gst) * 100) / 100;
+
+      document.getElementById('billSubtotal').textContent = '₹' + subtotal;
+      document.getElementById('billGst').textContent = '₹' + gst.toFixed(2);
+      document.getElementById('billGrandTotal').textContent = '₹' + grandTotal.toFixed(2);
+    }
+
+    // Menu Directory (Index Drawer)
+    function renderDirectory() {
+      const directoryList = document.getElementById('directoryList');
+      let html = '';
+      MENU_DATA.forEach(cat => {
+        html += `
+          <a class="directory-item" href="#section-${cat.id}" data-cat-id="${cat.id}">
+            <span>${cat.name}</span>
+            <span>${cat.items.length} dishes →</span>
+          </a>
+        `;
+      });
+      directoryList.innerHTML = html;
+
+      directoryList.querySelectorAll('.directory-item').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          playTactileClick();
+          closeSheets();
+          const targetId = link.dataset.catId;
+          const targetSection = document.getElementById('section-' + targetId);
+          if (targetSection) {
+            const topOffset = targetSection.getBoundingClientRect().top + window.pageYOffset - 105;
+            window.scrollTo({ top: topOffset, behavior: 'smooth' });
+          }
+          setActiveTab(targetId);
+        });
+      });
+    }
+
+    // Sheet Controllers
+    function openSheet(sheetEl) {
+      sheetBackdrop.classList.add('open');
+      sheetEl.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSheets() {
+      sheetBackdrop.classList.remove('open');
+      document.querySelectorAll('.bottom-sheet').forEach(s => s.classList.remove('open'));
+      document.body.style.overflow = '';
+    }
+
+    sheetBackdrop.addEventListener('click', closeSheets);
+    document.getElementById('cartCloseBtn').addEventListener('click', closeSheets);
+    document.getElementById('directoryCloseBtn').addEventListener('click', closeSheets);
+    floatingCartBar.addEventListener('click', () => {
+      playTactileClick();
+      openSheet(cartCheckoutSheet);
+    });
+
+    // Dining Mode Selector
+    document.querySelectorAll('.dining-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        playTactileClick();
+        document.querySelectorAll('.dining-toggle-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.diningMode = btn.dataset.mode;
+        document.getElementById('tableChipsSection').style.display = state.diningMode === 'Dine In' ? 'block' : 'none';
+      });
+    });
+
+    // Table Chips Selector
+    document.querySelectorAll('.table-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        playTactileClick();
+        document.querySelectorAll('.table-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        state.table = chip.dataset.table;
+      });
+    });
+
+    // Search Toggle
+    searchToggleBtn.addEventListener('click', () => {
+      playTactileClick();
+      const isActive = searchPanel.classList.toggle('active');
+      if (isActive) {
+        menuSearchInput.focus();
+      } else {
+        menuSearchInput.value = '';
+        state.searchQuery = '';
+        searchClearBtn.style.display = 'none';
+        renderDishes();
+      }
+    });
+
+    menuSearchInput.addEventListener('input', (e) => {
+      state.searchQuery = e.target.value;
+      searchClearBtn.style.display = state.searchQuery ? 'block' : 'none';
+      renderDishes();
+    });
+
+    searchClearBtn.addEventListener('click', () => {
+      menuSearchInput.value = '';
+      state.searchQuery = '';
+      searchClearBtn.style.display = 'none';
+      renderDishes();
+      menuSearchInput.focus();
+    });
+
+    // ScrollSpy for Categories
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.pageYOffset + 130;
+      for (const cat of MENU_DATA) {
+        const sec = document.getElementById('section-' + cat.id);
+        if (sec) {
+          const top = sec.offsetTop;
+          const height = sec.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            if (state.activeCategory !== cat.id) {
+              setActiveTab(cat.id);
+            }
+            break;
+          }
+        }
+      }
+    }, { passive: true });
+
+    // Save Guest Info
+    document.getElementById('guestNameInput').addEventListener('input', (e) => {
+      state.guestName = e.target.value;
+      localStorage.setItem('maharani_guest_name', state.guestName);
+    });
+    document.getElementById('guestPhoneInput').addEventListener('input', (e) => {
+      state.guestPhone = e.target.value;
+      localStorage.setItem('maharani_guest_phone', state.guestPhone);
+    });
+
+    // Pre-populate guest info
+    if (state.guestName) document.getElementById('guestNameInput').value = state.guestName;
+    if (state.guestPhone) document.getElementById('guestPhoneInput').value = state.guestPhone;
+
+    // THE SINGLE ORDER PLACEMENT ACTION — WHATSAPP FORMATTED RECEIPT
+    document.getElementById('btnPlaceOrderWhatsApp').addEventListener('click', () => {
+      playTactileClick();
+      const items = Object.values(state.cart);
+      if (items.length === 0) {
+        alert('Please select at least one dish to place an order.');
+        return;
+      }
+
+      let subtotal = 0;
+      let orderLines = [];
+
+      items.forEach(it => {
+        const lineTotal = it.qty * it.dish.price;
+        subtotal += lineTotal;
+        let line = `• ${it.qty}x ${it.dish.name} — ₹${lineTotal}`;
+        if (it.specialNote) {
+          line += `\n  _(Note: ${it.specialNote})_`;
+        }
+        orderLines.push(line);
+      });
+
+      const gst = Math.round(subtotal * 0.05 * 100) / 100;
+      const grandTotal = Math.round((subtotal + gst) * 100) / 100;
+
+      const dateStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const diningLoc = state.diningMode === 'Dine In' ? `${state.table} (Dine In)` : 'Takeaway / Parcel';
+      const guestTag = state.guestName ? state.guestName : 'Guest';
+
+      const message = 
+`👑 *MAHARANI CAFE — JAIPUR*
+*GUEST ORDER CONFIRMATION*
+━━━━━━━━━━━━━━━━━━━━
+📍 *Service:* ${diningLoc}
+👤 *Guest:* ${guestTag}
+⏰ *Time:* ${dateStr}
+━━━━━━━━━━━━━━━━━━━━
+*ORDERED ITEMS:*
+${orderLines.join('\n')}
+━━━━━━━━━━━━━━━━━━━━
+• Subtotal: ₹${subtotal}
+• GST (5%): ₹${gst.toFixed(2)}
+*GRAND TOTAL: ₹${grandTotal.toFixed(2)}*
+━━━━━━━━━━━━━━━━━━━━
+_Pure Vegetarian Artisanal Kitchen_
+_Sent via Maharani Cafe QR Portal_`;
+
+      const cafeWhatsApp = "919876543210"; // Official cafe ordering line
+      const waUrl = `https://wa.me/${cafeWhatsApp}?text=${encodeURIComponent(message)}`;
+      window.open(waUrl, '_blank');
+    });
+
+    // Initialize App
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCategoryTabs();
+      renderDishes();
+      renderDirectory();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+test_*.txt
+*.zip
+WhatsApp*
+*.pdf
+.DS_Store
+Thumbs.db
